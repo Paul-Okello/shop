@@ -17,7 +17,7 @@
           {% if not category  %}
               class="selected"
           {% endif   %}
-          <a href=" {% url "shop:product_list"%}">All</a></li>
+          <a href=" {% url 'shop:product_list' %}">All</a></li>
           {% for c in categories %}
             <li 
             {% if category.slug == c.slug %}
